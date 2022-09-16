@@ -37,7 +37,7 @@ order_items_summary as (
         sum(case when products.is_drink_item = 1 then product_price else 0 end) as subtotal_food_items,
         sum(product_price) as subtotal
 
-    from {{ ref('stg_orders') }}
+    from order_items
     join products using (product_id)
     group by 1
 
