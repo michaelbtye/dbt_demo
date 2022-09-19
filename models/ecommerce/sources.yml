@@ -5,7 +5,7 @@ sources:
     description: E-commerce data
 
     database: DEMO_DB
-    schema: "DEMO_DB"."ECOMMERCE"
+    schema: ECOMMERCE
     loader: manual
 
     tables:
