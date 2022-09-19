@@ -4,8 +4,8 @@ sources:
   - name: ecommerce
     description: E-commerce data
 
-    database: demo_db
-    schema: ecommerce
+    database: DEMO_DB
+    schema: "DEMO_DB"."ECOMMERCE"
     loader: manual
 
     tables:
