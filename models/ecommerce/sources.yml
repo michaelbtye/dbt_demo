@@ -4,8 +4,8 @@ sources:
   - name: ecommerce
     description: E-commerce data
 
-    database: DEMO_DB
-    schema: ECOMMERCE
+    database: '{{ env_var("DBT_DEMO_DATABASE", "DBT_DEMO_DATA") }}'
+    schema: '{{ env_var("DBT_DEMO_SCHEMA", "ECOMMERCE") }}'
     loader: manual
 
     tables:
