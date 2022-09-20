@@ -1,6 +1,6 @@
 with source as (
 
-    select * from {{ source('ecommerce', 'locations') }}
+    select * from {{ source('ecommerce', 'customers') }}
 
 ),
 
@@ -9,14 +9,10 @@ renamed as (
     select
 
         ----------  ids
-        id as location_id,
+        id as customer_id,
 
         ---------- properties
-        name as location_name,
-        tax_rate,
-
-        ---------- timestamp
-        opened_at
+        name as customer_name
 
     from source
 
